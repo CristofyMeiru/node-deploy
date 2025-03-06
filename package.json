@@ -1,0 +1,42 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "dev": "nodemon ./src/server.ts",
+    "start": "node dist/server.js",
+    "build": "esbuild src/server.ts --bundle --outdir=dist --platform=node --target=es2020"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CristofyMeiru/node-deploy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CristofyMeiru/node-deploy/issues"
+  },
+  "homepage": "https://github.com/CristofyMeiru/node-deploy#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "esbuild": "^0.25.0",
+    "nodemon": "^3.1.9",
+    "sucrase": "^3.35.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
