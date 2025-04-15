@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 100vw;
+}
+
+form {
+  background-color: var(--cor-form);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 1.8;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  width: 100%;
+  background-color: var(--cor-principal);
+  background-image: url('https://eeepsam.com.br/wp-content/themes/eeepsam/assets/images/elements/Shape9.png');
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  color: var(--cor-texto);
+
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  
+  cursor: pointer;
+  display: block;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+.custom-checkbox:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.custom-checkbox:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-checkbox:hover {
+  border-color: #45a049;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.campo-input {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 12px;
+  background-color: var(--cor-destaque);
+  padding: 5px 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--cor-secundaria);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#status {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.Logo-SEDUC {
+    width: 65%;
+    max-width: 600px;
+    min-height: 150px;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Logo-SEDUC h1 {
+    flex: 1;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Logo-SEDUC {
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+  .Logo-SEDUC h1 {
+    font-size: 18px;
+    
+  }
+}
+
+@media (min-width: 768px) {
+  form {
+    min-width: 600px;
+  }
+  .Logo-SEDUC {
+    min-height: 0;
+    margin: 10px;
+  }
+  .Logo-SEDUC img {
+    height: 50px;
+    width: auto;
+  }
+  .Logo-SEDUC h1 {
+    font-size: 20px;
+  }
+}
