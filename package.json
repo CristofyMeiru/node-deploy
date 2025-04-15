@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "nodemon ./src/server.ts",
     "start": "node dist/server.js",
-    "build": "esbuild src/server.ts --bundle --outdir=dist --platform=node --target=es2020"
+    "build": "esbuild src/server.ts --bundle --outdir=dist --platform=node --target=es2020 && cp -r src/public dist/"
   },
   "repository": {
     "type": "git",
